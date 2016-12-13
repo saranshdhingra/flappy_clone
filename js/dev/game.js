@@ -3,11 +3,12 @@ var config={
 	PIPE_TIMER:1500,
 	BIRD_GRAVITY:1000,
 	BIRD_JUMP:-350,
-	PIPE_VERTICAL_GAP:100
+	PIPE_VERTICAL_GAP:100,
+	NAME:"Anonymous"
 }
 
 
-game = new Phaser.Game(640,360,Phaser.AUTO);
+var game = new Phaser.Game(640,360,Phaser.AUTO);
 
 game.state.add('bootState',bootState);
 game.state.add('loadState',loadState);

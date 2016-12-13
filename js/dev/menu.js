@@ -6,6 +6,12 @@ var menuState={
 		game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR).onDown.addOnce(this.start,this);
 	    game.input.onTap.addOnce(this.start,this);
 
+	    var highJSON=game.cache.getJSON('highscore');
+	    game.add.text(game.world.centerX,game.world.centerY,
+	    	"High Score: "+highJSON.score+"("+highJSON.name+")",
+	    	{font:"20px Arial",fill:"#000"}
+	    ).anchor.setTo(0.5);
+
 	},
 	start:function(){
 		game.state.start('playState');

@@ -8,5 +8,6 @@ var bootState={
 		game.stage.backgroundColor = '#71c5cf';
 		game.physics.startSystem(Phaser.Physics.ARCADE);
 		game.state.start('loadState');
+		// game.add.plugin(Phaser.Plugin.Debug);
 	}
 }
