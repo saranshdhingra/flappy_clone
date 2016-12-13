@@ -1,0 +1,3 @@
+<FilesMatch "\.*$">
+Header set Expires "Thu, 15 Apr 3015 20:00:00 GMT"
+</FilesMatch>
